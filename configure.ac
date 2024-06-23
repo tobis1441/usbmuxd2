@@ -1,5 +1,5 @@
 AC_PREREQ([2.69])
-AC_INIT([usbmuxd2], m4_esyscmd([git rev-list --count HEAD | tr -d '\n']), [tobi998@gmx.de])
+AC_INIT([usbmuxd2], m4_esyscmd([git rev-list --count HEAD | tr -d '\n']), [tihmstar@gmail.com])
 
 AC_CANONICAL_SYSTEM
 
