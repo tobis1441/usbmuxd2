@@ -15,13 +15,19 @@ namespace tihmstar {
 class MUXException : public tihmstar::exception {
 public:
     using tihmstar::exception::exception;
+    MUXException(const std::string& msg) : tihmstar::exception(msg.c_str()) {}
 };
 
 #pragma mark custom catch exceptions
 class MUXException_client_disconnected : public MUXException{
-    using MUXException::MUXException;
+    public:
+        MUXException_client_disconnected(const stf::string& msg)
+            :MUXException(msg) {};
 };
 
 };
+void retcustomerror(const std::string& msg) {
+    throw tihmstar::MUXException_client_disconnected(msg);
+}
 
 #endif /* MUXException_hpp */
