@@ -22,6 +22,10 @@ class MUXException_client_disconnected : public MUXException{
     using MUXException::MUXException;
 };
 
+void retcustomerror(const std::string& msg) {
+    throw tihmstar::MUXException_client_disconnected(msg);
+}
+
 };
 
 #endif /* MUXException_hpp */
