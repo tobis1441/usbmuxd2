@@ -21,7 +21,7 @@ public:
 #pragma mark custom catch exceptions
 class MUXException_client_disconnected : public MUXException{
     public:
-        MUXException_client_disconnected(const stf::string& msg)
+        MUXException_client_disconnected(const std::string& msg)
             :MUXException(msg) {};
 };
 
